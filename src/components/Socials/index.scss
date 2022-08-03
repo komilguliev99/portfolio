@@ -1,0 +1,28 @@
+.Socials {
+  justify-content: center;
+  display: flex;
+  gap: 20px;
+
+  &__item  {
+    // display: flex;
+    // align-items: center;
+    // justify-content: center;
+    // width: 40px;
+    // height: 40px;
+    // background: #888;
+    // border-radius: 50%;
+    cursor: pointer;
+
+    & > img {
+      width: 20px;
+      height: 20px;
+      transition: transform .3s ease, opacity 4s ease;
+      opacity: .9;
+    }
+
+    &:hover > img {
+      transform: scale(1.1);
+      opacity: 1;
+    }
+  }
+}

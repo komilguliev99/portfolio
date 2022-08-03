@@ -1,0 +1,46 @@
+@import '../../scss/abstract';
+
+.AccordionFixed {
+  position: relative;
+  border-left: 2px solid $color-blue;
+  padding-left: 30px;
+  color: $color-dark;
+
+  &::after {
+    content: "";
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: #fff;
+    border: 2px solid $color-blue;
+    position: absolute;
+    top: 0;
+    left: -10px;
+  }
+
+  &__label {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    padding: .5rem 2rem;
+    background: $color-blue-light;
+    margin: 0 0 .8rem 0;
+    display: inline-block;
+  }
+
+  &__title {
+    color: $color-title;
+    font-size: 1.8rem;
+    position: relative;
+    text-transform: uppercase;
+    font-weight: 600;
+    top: -.6rem;
+  }
+
+  &__subtitle {
+    font-style: italic;
+  }
+
+  &__content {
+    padding: 10px 0 20px 0px;
+  }
+}

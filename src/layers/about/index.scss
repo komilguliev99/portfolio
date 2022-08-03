@@ -1,0 +1,43 @@
+@import '../../scss/abstract';
+
+.About {
+  color: $color-dark;
+  margin-bottom: 5rem;
+  padding-left: $main-padding-left;
+
+  &__text {
+    margin-bottom: 3rem;
+  }
+
+  &__info {
+    display: flex;
+    gap: 3rem;
+  }
+
+  &__img {
+    min-width: 35rem;
+    height: 35rem;
+
+    & > img {
+      width: 100%;
+    }
+  }
+
+  &__subtitle {
+    font-style: italic;
+  }
+
+  &__info-box {
+    padding: 3rem 2rem;
+    max-width: 90rem;
+    display: flex;
+    gap: 3rem;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    & > div {
+      min-width: 45%;
+      box-sizing: border-box;
+    }
+  }
+}

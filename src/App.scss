@@ -1,0 +1,14 @@
+@import './scss/abstract';
+
+.App {
+  padding: 0;
+
+  &__content {
+    display: block;
+    padding-left: 250px;
+  }
+
+  &__container {
+    padding: 0 0 30px;
+  }
+}

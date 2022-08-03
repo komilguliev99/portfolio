@@ -1,0 +1,24 @@
+@import '../../scss/abstract';
+
+.Resume {
+  padding-left: $main-padding-left;
+
+  &__chapter {
+    font-size: 2.5rem;
+    color: $color-title;
+    font-weight: 600;
+    margin-bottom: 10px;
+    margin-top: 30px;
+  }
+
+  &__grid {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1300px;
+    gap: 4%;
+  }
+
+  &__grid-item {
+    width: 48%;
+  }
+}

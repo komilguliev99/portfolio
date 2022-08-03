@@ -1,0 +1,52 @@
+.Introduction {
+  box-sizing: border-box;
+  height: 95vh;
+  background: url(https://top-fon.com/uploads/posts/2021-07/1626945256_37-p-krasnii-tekhnologichnii-fon-37.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  color: #fff;
+  padding: 250px 0 0 300px;
+
+  &__title {
+    font-size: 64px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    line-height: 67px;
+  }
+
+  & > h4 {
+    font-size: 45px;
+    font-weight: 500;
+    letter-spacing: 1px;
+  }
+}
+
+.cursor {
+  position: relative;
+  display: inline-block;
+
+  &::after {
+    content: "";
+    position: absolute;
+    right: -5px;
+    top: 0;
+    height: 100%;
+    width: 3px;
+    background: #fff;
+    animation: cursorInOut .6s ease infinite;
+  }
+}
+
+@keyframes cursorInOut {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}

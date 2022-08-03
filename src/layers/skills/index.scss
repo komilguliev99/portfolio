@@ -1,0 +1,21 @@
+@import '../../scss/abstract';
+
+.Skills {
+  background: $bg-color-blue-light;
+  padding-left: $main-padding-left;
+
+  &__box {
+    display: flex;
+    gap: 4%;
+    padding: 0 20px 0 0;
+    box-sizing: border-box;
+    max-width: 1300px;
+    flex-wrap: wrap;
+
+    & > div {
+      width: 48%;
+      box-sizing: border-box;
+      margin-bottom: 30px;
+    }
+  }
+}
