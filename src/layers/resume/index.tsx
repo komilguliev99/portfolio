@@ -10,7 +10,7 @@ export const Resume: FC<{}> = () => {
             <LayerTitle title="Resume" underlined />
             <p className="Resume__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam ratione molestias est unde voluptatibus nemo doloribus eaque! Iure, doloremque dicta culpa ad, vel ipsum explicabo voluptatum maiores eius amet adipisci quibusdam quae accusantium sed provident laboriosam odit ut tempore aut. Accusamus in adipisci aperiam ea aliquid quas possimus quidem saepe.</p>
 
-            <div className="Resume__grid">
+            <div className="Resume__grid fadeIn">
                 <div className="Resume__grid-item">
                     <h4 className="Resume__chapter">Summary</h4>
                     <AccordionFixed title="Komil Guliev" subtitle="Innovative and deadline-driven Graphic Designer with 3+ years of experience designing and developing user-centered digital/print marketing material from initial concept to final, polished deliverable.">

@@ -1,0 +1,62 @@
+@import '../../scss/abstract';
+
+.ServiceCard {
+  padding-left: 20px;
+  display: flex;
+  gap: 20px;
+
+  &__title {
+    font-size: 2rem;
+    color: $color-light;
+    margin-bottom: 1rem;
+    font-weight: 600;
+  }
+
+  &__icon {
+    min-width: 5rem;
+    height: 5rem;
+    border: 3px solid $color-main-blue;
+    position: relative;
+    border-radius: 50%;
+
+    &::after {
+      content: "";
+      width: 2rem;
+      height: 2rem;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    &--code::after {
+      background-image: url('../../assets/icons/code.svg');
+    }
+
+    &--app::after {
+      background-image: url('../../assets/icons/app.svg');
+    }
+
+    &--backend::after {
+      background-image: url('../../assets/icons/backend.svg');
+    }
+
+    &--integration::after {
+      background-image: url('../../assets/icons/integration.svg');
+    }
+
+    &--adaptive::after {
+      background-image: url('../../assets/icons/adaptive.svg');
+    }
+  }
+
+  &__desc {
+    display: -webkit-box;
+    text-overflow: ellipsis;
+    line-clamp: 3;
+    -webkit-line-clamp: 3;
+  }
+}

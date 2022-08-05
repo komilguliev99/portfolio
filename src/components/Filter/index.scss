@@ -1,0 +1,28 @@
+@import '../../scss/abstract';
+
+.Filter {
+  display: flex;
+  padding: 1rem 2rem;
+  border-radius: 2rem;
+  justify-content: center;
+  background: #fff;
+  width: 300px;
+  margin: 0 auto;
+
+  &__item {
+    min-width: 7rem;
+    font-size: 1.7rem;
+    color: $color-dark;
+    transition: color .3s ease;
+    font-weight: 600;
+    cursor: pointer;
+
+    &--active {
+      color: $color-main-blue;
+    }
+
+    &:hover {
+      color: $color-main-blue;
+    }
+  }
+}

@@ -20,6 +20,13 @@
     & > p {
       height: 1rem;
       background: $color-main-blue;
+      // transform: scaleX(0);
+      // transform-origin: 0 0;
     }
+  }
+
+  &.active &_box p {
+    transition: transform .5s ease;
+    transform: scaleX(1);
   }
 }

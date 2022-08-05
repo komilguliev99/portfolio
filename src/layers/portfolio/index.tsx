@@ -1,36 +1,34 @@
-import React, { FC } from 'react';
+import { ProjectCard } from '../../components/ProjectCard';
+import React, { FC, useState } from 'react';
 import { LayerTitle } from '../../components/LayerTitle';
-import DefaultUser from '../../assets/def-user.jpg';
+import { FlexBox } from '../../components/FlexBox';
 import './index.scss';
-import { Fact } from '../../components/Fact';
+import { Filter } from '../../components/Filter';
 
-export const About: FC<{}> = () => {
-    const myTitle = 'Frontend engineer & Web developer';
+export const Portfolio: FC<{}> = () => {
+    const [filterValue, setFilterValue] = useState('App');
+
+    const onSelect = (value: string) => {
+        setFilterValue(value);
+    };
 
     return (
-        <div className="About">
-            <LayerTitle title="About" underlined />
-            <p className="About__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam ratione molestias est unde voluptatibus nemo doloribus eaque! Iure, doloremque dicta culpa ad, vel ipsum explicabo voluptatum maiores eius amet adipisci quibusdam quae accusantium sed provident laboriosam odit ut tempore aut. Accusamus in adipisci aperiam ea aliquid quas possimus quidem saepe.</p>
-            <div className="About__info">
-                <div className="About__img">
-                    <img src={DefaultUser} alt="" />
-                </div>
-                <div className="About__container">
-                    <LayerTitle title={myTitle} size="xl" />
-                    <p className="About__subtitle">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea, unde aperiam? Quasi libero tempora quibusdam doloremque amet ex eveniet. Repudiandae!</p>
-                    <div className="About__info-box">
-                        <Fact title="Birthday" value="1 July 1999" />
-                        <Fact title="Age" value="23" />
-                        <Fact title="Website" value="www.dcapers.com" />
-                        <Fact title="Degree" value="Bachelor" />
-                        <Fact title="Phone" value="+992 98 501 91 11" />
-                        <Fact title="Email" value="komil.guliev.a1999@gmail.com" />
-                        <Fact title="City" value="Dushanbe, Tajikistan" />
-                        <Fact title="Freelance" value="Available" />
-                    </div>
-                    <p className="About__subtitle">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Esse non explicabo ab cupiditate natus architecto modi error molestias quidem soluta reprehenderit minus enim, ad ratione rem. Vitae voluptates placeat excepturi, numquam labore eius dolores explicabo id cupiditate iste? Consequatur amet, odio officia est ex aut cum accusamus? Repudiandae vero alias, impedit, voluptate quaerat mollitia veniam velit adipisci, reprehenderit consequatur a error non unde! Qui officiis possimus blanditiis accusantium sint dolorum alias asperiores. Temporibus, esse quaerat maiores quis facere dignissimos in!</p>
-                </div>
+        <div className="Portfolio">
+            <LayerTitle title="Portfolio" underlined />
+            <p className="Portfolio__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint dicta sequi similique. Labore, eos? Soluta suscipit totam corrupti a beatae eos, molestiae laudantium temporibus praesentium!</p>
+            <div className="Portfolio__filter-box">
+                <Filter items={['App', 'Web', 'Mobile']} value={filterValue} onSelect={onSelect} />
             </div>
+            <FlexBox cols={3} gap={2} className="fadeIn">
+                <ProjectCard title="Aion (Zypl.ai)" img="https://images.template.net/wp-content/uploads/2017/07/coolin2.jpg" url="#nothing" />
+                <ProjectCard title="Aion (Zypl.ai)" img="https://assets.hongkiat.com/uploads/cool-website-experiments/17-panic.jpg" url="#nothing" />
+                <ProjectCard title="Aion (Zypl.ai)" img="https://images.template.net/wp-content/uploads/2017/07/coolin2.jpg" url="#nothing" />
+                <ProjectCard title="Aion (Zypl.ai)" img="https://assets.hongkiat.com/uploads/cool-website-experiments/17-panic.jpg" url="#nothing" />
+                <ProjectCard title="Aion (Zypl.ai)" img="https://images.template.net/wp-content/uploads/2017/07/coolin2.jpg" url="#nothing" />
+                <ProjectCard title="Aion (Zypl.ai)" img="https://assets.hongkiat.com/uploads/cool-website-experiments/17-panic.jpg" url="#nothing" />
+                <ProjectCard title="Aion (Zypl.ai)" img="https://images.template.net/wp-content/uploads/2017/07/coolin2.jpg" url="#nothing" />
+                <ProjectCard title="Aion (Zypl.ai)" img="https://assets.hongkiat.com/uploads/cool-website-experiments/17-panic.jpg" url="#nothing" />
+            </FlexBox>
         </div>
     );
 };

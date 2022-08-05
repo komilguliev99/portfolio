@@ -1,0 +1,12 @@
+@import '../../scss/abstract';
+
+.CardBox {
+  padding: 3rem;
+  box-shadow: 0 0 24px 0 rgba(0, 0, 0, .12);
+  background-color: #fff;
+  box-sizing: border-box;
+
+  &_full {
+    height: 100%;
+  }
+}

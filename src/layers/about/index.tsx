@@ -12,10 +12,10 @@ export const About: FC<{}> = () => {
             <LayerTitle title="About" underlined />
             <p className="About__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam ratione molestias est unde voluptatibus nemo doloribus eaque! Iure, doloremque dicta culpa ad, vel ipsum explicabo voluptatum maiores eius amet adipisci quibusdam quae accusantium sed provident laboriosam odit ut tempore aut. Accusamus in adipisci aperiam ea aliquid quas possimus quidem saepe.</p>
             <div className="About__info">
-                <div className="About__img">
+                <div className="About__img fadeRight">
                     <img src={DefaultUser} alt="" />
                 </div>
-                <div className="About__container">
+                <div className="About__container fadeLeft">
                     <LayerTitle title={myTitle} size="xl" />
                     <p className="About__subtitle">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea, unde aperiam? Quasi libero tempora quibusdam doloremque amet ex eveniet. Repudiandae!</p>
                     <div className="About__info-box">

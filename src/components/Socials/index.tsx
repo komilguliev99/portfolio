@@ -8,7 +8,7 @@ export const Socials: FCC<{}> = () => {
 
     return (
         <div className="Socials">
-            { socialNets.map(item => <SocialsItem {...item} />)}
+            { socialNets.map(item => <SocialsItem key={item.name} {...item} />)}
         </div>
     );
 };

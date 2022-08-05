@@ -8,7 +8,7 @@ export const Menu: FCC<{}> = () => {
 
     return (
         <div className="Menu">
-            { menuOptions.map(item => <MenuItem {...item} />)}
+            { menuOptions.map(item => <MenuItem key={item.title} {...item} />)}
         </div>
     );
 };

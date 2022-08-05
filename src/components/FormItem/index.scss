@@ -1,0 +1,30 @@
+@import '../../scss/abstract';
+
+.FormItem {
+  margin-bottom: 2rem;
+  box-sizing: border-box;
+
+  & > input,
+  & > textarea {
+    width: 100%;
+    padding: 1rem 2rem;
+    border: 1px solid $color-grey-light;
+    outline: none;
+    box-sizing: border-box;
+    color: $color-darken;
+
+    &:focus {
+      border-color: $color-main-blue-65;
+    }
+  }
+
+  & > textarea {
+    min-height: 18rem;
+  }
+
+  &__label {
+    font-size: 1.7rem;
+    color: $color-dark;
+    margin-bottom: .8rem;
+  }
+}

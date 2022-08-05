@@ -1,0 +1,9 @@
+@import '../../scss/abstract';
+
+.List {
+  padding-left: 20px;
+
+  & > li {
+    margin-bottom: 5px;
+  }
+}

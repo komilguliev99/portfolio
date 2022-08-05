@@ -21,6 +21,7 @@
 		"@typescript-eslint"
 	],
 	"rules": {
+			"@typescript-eslint/no-explicit-any": "error",
 			"@typescript-eslint/strict-boolean-expressions": [
 				2,
 				{
@@ -30,8 +31,8 @@
 			],
 			"react/prop-types": 0,
 			// vars
-			"no-unused-vars": ["error", { "vars": "all", "args": "after-used", "ignoreRestSiblings": false }],
-
+			"no-unused-vars": "off",
+			"@typescript-eslint/no-unused-vars": ["error"],
 			// enable additional rules
 			"indent": ["error", 4],
 			"linebreak-style": ["error", "unix"],
