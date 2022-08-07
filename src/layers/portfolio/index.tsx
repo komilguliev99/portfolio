@@ -13,7 +13,7 @@ export const Portfolio: FC<{}> = () => {
     };
 
     return (
-        <div className="Portfolio">
+        <div className="Portfolio" id="portfolio">
             <LayerTitle title="Portfolio" underlined />
             <p className="Portfolio__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint dicta sequi similique. Labore, eos? Soluta suscipit totam corrupti a beatae eos, molestiae laudantium temporibus praesentium!</p>
             <div className="Portfolio__filter-box">

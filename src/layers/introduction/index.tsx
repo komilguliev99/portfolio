@@ -10,8 +10,14 @@ export const Introduction: FC<{}> = () => {
 
     return (
         <div className="Introduction">
-            <h2 className="Introduction__title">Komil Guliev</h2>
-            <TypingTexts texts={animationTexts} />
+            <div className="Introduction__content">
+                <h2 className="Introduction__title">Komil Guliev</h2>
+                <TypingTexts texts={animationTexts} />
+                <div className="Introduction__overlay">
+                    <h2 className="Introduction__title">Komil Guliev</h2>
+                    <TypingTexts style="primary" texts={animationTexts} />
+                </div>
+            </div>
         </div>
     );
 };

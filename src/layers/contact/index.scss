@@ -20,6 +20,14 @@
 
   &__content-item {
     width: 100%;
+
+    &:first-child {
+      flex: 2;
+    }
+
+    &:nth-child(2) {
+      flex: 3;
+    }
   }
 
   &__centered {

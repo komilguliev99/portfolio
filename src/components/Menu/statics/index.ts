@@ -23,7 +23,7 @@ export const menuOptions: IMenuOption[] = [
         icon: Resume
     },
     {
-        url: '#about',
+        url: '#portfolio',
         title: 'Portfolio',
         icon: Portfolio
     },

@@ -1,0 +1,52 @@
+@import '../../scss/abstract';
+@import '../../scss/gradients';
+@import '../../scss/animations';
+
+.Loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 99999;
+  @include loader-gradient;
+
+  &_2s &__content::before {
+    animation: scaleWidth 2s ease forwards;
+  }
+
+  &_3s &__content::before {
+    animation: scaleWidth 3s ease forwards;
+  }
+
+  &_4s &__content::before {
+    animation: scaleWidth 4s ease forwards;
+  }
+
+  &__content {
+    position: relative;
+    width: 60%;
+  }
+
+  &__title {
+    text-align: center;
+    font-size: 4rem;
+    letter-spacing: .8rem;
+    color: #fff;
+    animation: bounceHeight 1s linear infinite;
+  }
+
+  &__content::before {
+    content: "";
+    width: 0;
+    height: .5rem;
+    border-radius: .2rem;
+    background: #fff;
+    position: absolute;
+    top: calc(100% + 40px);
+    left: 0;
+  }
+}

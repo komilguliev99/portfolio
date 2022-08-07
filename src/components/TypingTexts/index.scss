@@ -1,0 +1,17 @@
+@import '../../scss/abstract';
+
+.TypingText {
+  font-size: 45px;
+  font-weight: 500;
+  letter-spacing: 1px;
+
+  &_default {
+    color: #fff;
+    border-color: #fff;
+  }
+
+  &_primary {
+    color: $color-typing-primary;
+    border-color: $color-typing-primary;
+  }
+}

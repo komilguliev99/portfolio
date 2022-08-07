@@ -1,0 +1,23 @@
+@keyframes scaleWidth {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+@keyframes bounceHeight {
+  0% {
+    transform: scaleY(1);
+  }
+  33% {
+    transform: scaleY(1.2);
+  }
+  66% {
+    transform: scaleY(.8);
+  }
+  100% {
+    transform: scaleY(1);
+  }
+}

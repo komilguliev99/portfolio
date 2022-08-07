@@ -1,3 +1,4 @@
+import { Loader } from './components/Loader';
 import { About } from 'layers/about';
 import { Contact } from 'layers/contact';
 import { Introduction } from 'layers/introduction';
@@ -32,6 +33,8 @@ function App() {
         return () => window.removeEventListener('scroll', handler);
     });
 
+
+
     return (
         <div className="App">
             <Header />
@@ -46,6 +49,7 @@ function App() {
                     <Contact />
                 </div>
             </div>
+            <Loader time={3} />
         </div>
     );
 }

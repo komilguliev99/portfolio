@@ -6,6 +6,7 @@ import './index.scss';
 import { FlexBox } from '../../components/FlexBox';
 import { FormItem } from '../../components/FormItem';
 import { Button } from '../../components/Button';
+import { YMaps } from '../../components/Ymaps';
 
 export const Contact: FC<{}> = () => {
     return (
@@ -19,6 +20,7 @@ export const Contact: FC<{}> = () => {
                         <FactLabel title="Location" subtitle="Dushanbe, Tajikistan" icon="location" />
                         <FactLabel title="Email" subtitle="komil.guliev.a1999@gmail.com" icon="mail" />
                         <FactLabel title="Call" subtitle="+992 985 019 111" icon="phone" />
+                        <YMaps />
                     </CardBox>
                 </div>
                 <div className="Contact__content-item">

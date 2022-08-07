@@ -1,11 +1,13 @@
 import React, { FC, useEffect, useState } from 'react';
+import './index.scss';
 
 interface ITypingTexts {
 	texts: string[];
+	style?: 'default' | 'primary';
 }
 
 export const TypingTexts: FC<ITypingTexts> = ({
-    texts
+    texts, style = 'default'
 }) => {
 
     const [curr, setCurrText] = useState(0);
@@ -33,17 +35,17 @@ export const TypingTexts: FC<ITypingTexts> = ({
     useEffect(() => {
         let speed = 200;
         if (cursor > 7) {
-            speed = 500;
+            speed = 400;
         }
 
         setTimeout(() => {
             changeText();
-        }, Math.round(Math.random() * speed));
+        }, speed);
     }, [cursor]);
 
     const animText = texts[curr];
 
     return (
-        <h4 className="cursor">I'm { animText.slice(0, cursor + 1) }</h4>
+        <h4 className={`cursor TypingText TypingText_${style}`}>I'm { animText.slice(0, cursor + 1) }</h4>
     );
 };
