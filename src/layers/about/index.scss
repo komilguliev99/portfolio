@@ -1,4 +1,6 @@
 @import '../../scss/abstract';
+@import '../../scss/displays';
+@import '../../scss/mixins';
 
 .About {
   color: $color-dark;
@@ -40,6 +42,35 @@
     & > div {
       min-width: 45%;
       box-sizing: border-box;
+    }
+  }
+
+  @include respond-to('extra-large') {
+    @include padding-extra-large;
+  }
+
+  @include respond-to('large') {
+
+    @include padding-large;
+
+    &__info {
+      flex-direction: column;
+      gap: 8rem;
+    }
+
+    &__img {
+      max-width: 50rem;
+      height: 45rem;
+    }
+
+    &__info-box {
+      flex-direction: column;
+      padding-left: 0;
+      gap: 2rem;
+
+      & > div {
+
+      }
     }
   }
 }

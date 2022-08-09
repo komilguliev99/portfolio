@@ -1,9 +1,12 @@
 @import '../../scss/abstract';
+@import '../../scss/displays';
+@import '../../scss/mixins';
 
 .Skills {
   background: $bg-color-blue-light;
   padding-left: $main-padding-left;
   padding-right: $main-padding-right;
+  padding-bottom: 4rem;
 
   &__box {
     display: flex;
@@ -17,6 +20,23 @@
       width: 48%;
       box-sizing: border-box;
       margin-bottom: 30px;
+    }
+  }
+
+  @include respond-to('extra-large') {
+    @include padding-extra-large;
+  }
+
+  @include respond-to('large') {
+
+    @include padding-large;
+
+    &__box {
+      flex-direction: column;
+
+      & > div {
+        width: 100%;
+      }
     }
   }
 }

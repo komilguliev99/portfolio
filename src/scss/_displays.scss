@@ -1,15 +1,16 @@
 $breakpoints: (
-  'extra-small': 420px,
-  'small': 640px,
-  'medium': 1007px,
-  'large': 1008px
+  'extra-small': (max-width: 420px),
+  'small': (max-width: 800px),
+  'medium': (max-width: 1007px),
+  'large': (max-width: 1300px),
+  'extra-large': (min-width: 1920px)
 );
 
 @mixin respond-to($breakpoint) {
 
   @if map-has-key($breakpoints, $breakpoint) {
 
-    @media (max-width: map-get($breakpoints, $breakpoint)) {
+    @media only screen and #{map-get($breakpoints, $breakpoint)} {
       @content;
     }
   }

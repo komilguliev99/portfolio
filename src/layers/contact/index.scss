@@ -1,4 +1,6 @@
 @import '../../scss/abstract';
+@import '../../scss/displays';
+@import '../../scss/mixins';
 
 .Contact {
   color: $color-dark;
@@ -18,20 +20,25 @@
     gap: 3rem;
   }
 
-  &__content-item {
-    width: 100%;
-
-    &:first-child {
-      flex: 2;
-    }
-
-    &:nth-child(2) {
-      flex: 3;
-    }
-  }
-
   &__centered {
     display: flex;
     justify-content: center;
+  }
+
+  &__map-container {
+    width: 100%;
+  }
+
+  @include respond-to('extra-large') {
+    @include padding-extra-large;
+  }
+
+  @include respond-to('large') {
+
+    @include padding-large;
+
+    &__content {
+      grid-template-columns: 2fr;
+    }
   }
 }

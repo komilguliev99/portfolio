@@ -1,4 +1,5 @@
 @import './scss/abstract';
+@import './scss/displays';
 
 .App {
   padding: 0;
@@ -10,5 +11,13 @@
 
   &__container {
     padding: 0;
+  }
+}
+
+@include respond-to('large') {
+  .App {
+    &__content {
+      padding-left: 0;
+    }
   }
 }

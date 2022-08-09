@@ -1,3 +1,5 @@
+@import '../../scss/displays';
+
 .FlexBox {
   display: flex;
   flex-wrap: wrap;
@@ -15,55 +17,23 @@
         & > div {
           width: calc(calc(100% - #{(($row - 1) * $gap)}rem) / #{$row});
         }
+
+        @if $row >= 2 {
+          @include respond-to('large') {
+            & > div {
+              width: calc(calc(100% - #{(($row - 2) * $gap)}rem) / #{$row - 1});
+            }
+          }
+        }
+
+        @if $row >= 3 {
+          @include respond-to('medium') {
+            & > div {
+              width: calc(calc(100% - #{(($row - 3) * $gap)}rem) / #{$row - 2});
+            }
+          }
+        }
       }
     }
   }
-
-  // &_2-2 {
-  //   gap: 2rem;
-
-  //   & > div {
-  //     width: calc(calc(100% - 2rem) / 2);
-  //   }
-  // }
-
-  // &_2-3 {
-  //   gap: 3rem;
-
-  //   & > div {
-  //     width: calc(calc(100% - 3rem) / 2);
-  //   }
-  // }
-
-  // &_2-4 {
-  //   gap: 4rem;
-
-  //   & > div {
-  //     width: calc(calc(100% - 4rem) / 2);
-  //   }
-  // }
-
-  // &_3-2 {
-  //   gap: 2rem;
-
-  //   & > div {
-  //     width: calc(calc(100% - 4rem) / 3);
-  //   }
-  // }
-
-  // &_3-3 {
-  //   gap: 3rem;
-
-  //   & > div {
-  //     width: calc(calc(100% - 6rem) / 3);
-  //   }
-  // }
-
-  // &_3-4 {
-  //   gap: 4rem;
-
-  //   & > div {
-  //     width: calc(calc(100% - 8rem) / 3);
-  //   }
-  // }
 }

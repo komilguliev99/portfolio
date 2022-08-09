@@ -20,14 +20,14 @@ export const Portfolio: FC<{}> = () => {
                 <Filter items={['App', 'Web', 'Mobile']} value={filterValue} onSelect={onSelect} />
             </div>
             <FlexBox cols={3} gap={2} className="fadeIn">
-                <ProjectCard title="Aion (Zypl.ai)" img="https://images.template.net/wp-content/uploads/2017/07/coolin2.jpg" url="#nothing" />
-                <ProjectCard title="Aion (Zypl.ai)" img="https://assets.hongkiat.com/uploads/cool-website-experiments/17-panic.jpg" url="#nothing" />
-                <ProjectCard title="Aion (Zypl.ai)" img="https://images.template.net/wp-content/uploads/2017/07/coolin2.jpg" url="#nothing" />
-                <ProjectCard title="Aion (Zypl.ai)" img="https://assets.hongkiat.com/uploads/cool-website-experiments/17-panic.jpg" url="#nothing" />
-                <ProjectCard title="Aion (Zypl.ai)" img="https://images.template.net/wp-content/uploads/2017/07/coolin2.jpg" url="#nothing" />
-                <ProjectCard title="Aion (Zypl.ai)" img="https://assets.hongkiat.com/uploads/cool-website-experiments/17-panic.jpg" url="#nothing" />
-                <ProjectCard title="Aion (Zypl.ai)" img="https://images.template.net/wp-content/uploads/2017/07/coolin2.jpg" url="#nothing" />
-                <ProjectCard title="Aion (Zypl.ai)" img="https://assets.hongkiat.com/uploads/cool-website-experiments/17-panic.jpg" url="#nothing" />
+                <div className="FlexBox__item"><ProjectCard title="Aion (Zypl.ai)" img="https://images.template.net/wp-content/uploads/2017/07/coolin2.jpg" url="#nothing" /></div>
+                <div className="FlexBox__item"><ProjectCard title="Aion (Zypl.ai)" img="https://assets.hongkiat.com/uploads/cool-website-experiments/17-panic.jpg" url="#nothing" /></div>
+                <div className="FlexBox__item"><ProjectCard title="Aion (Zypl.ai)" img="https://images.template.net/wp-content/uploads/2017/07/coolin2.jpg" url="#nothing" /></div>
+                <div className="FlexBox__item"><ProjectCard title="Aion (Zypl.ai)" img="https://assets.hongkiat.com/uploads/cool-website-experiments/17-panic.jpg" url="#nothing" /></div>
+                <div className="FlexBox__item"><ProjectCard title="Aion (Zypl.ai)" img="https://images.template.net/wp-content/uploads/2017/07/coolin2.jpg" url="#nothing" /></div>
+                <div className="FlexBox__item"><ProjectCard title="Aion (Zypl.ai)" img="https://assets.hongkiat.com/uploads/cool-website-experiments/17-panic.jpg" url="#nothing" /></div>
+                <div className="FlexBox__item"><ProjectCard title="Aion (Zypl.ai)" img="https://images.template.net/wp-content/uploads/2017/07/coolin2.jpg" url="#nothing" /></div>
+                <div className="FlexBox__item"><ProjectCard title="Aion (Zypl.ai)" img="https://assets.hongkiat.com/uploads/cool-website-experiments/17-panic.jpg" url="#nothing" /></div>
             </FlexBox>
         </div>
     );

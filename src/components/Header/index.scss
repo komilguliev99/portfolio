@@ -1,4 +1,5 @@
 @import '../../scss/abstract';
+@import '../../scss/displays';
 
 .Header {
   position: fixed;
@@ -9,6 +10,7 @@
   background: $color-main;
   padding: 50px 30px;
   box-sizing: border-box;
+  z-index: 99999;
 
 
   &__image {
@@ -33,5 +35,11 @@
 
   &__contacts {
     margin-bottom: 20px;
+  }
+}
+
+@include respond-to('large') {
+  .Header {
+    display: none;
   }
 }

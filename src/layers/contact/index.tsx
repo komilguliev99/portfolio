@@ -20,14 +20,18 @@ export const Contact: FC<{}> = () => {
                         <FactLabel title="Location" subtitle="Dushanbe, Tajikistan" icon="location" />
                         <FactLabel title="Email" subtitle="komil.guliev.a1999@gmail.com" icon="mail" />
                         <FactLabel title="Call" subtitle="+992 985 019 111" icon="phone" />
-                        <YMaps />
+                        <div className="Contact__map-container"><YMaps /></div>
                     </CardBox>
                 </div>
                 <div className="Contact__content-item">
                     <CardBox fullHeight>
                         <FlexBox cols={2} gap={2}>
-                            <FormItem label="Your Name" />
-                            <FormItem label="Your Email" />
+                            <div className="FlexBox__item">
+                                <FormItem label="Your Name" />
+                            </div>
+                            <div className="FlexBox__item">
+                                <FormItem label="Your Email" />
+                            </div>
                         </FlexBox>
                         <FormItem label="Subject" />
                         <FormItem type="textarea" label="Message" />

@@ -1,4 +1,6 @@
 @import '../../scss/abstract';
+@import '../../scss/displays';
+@import '../../scss/mixins';
 
 .Services {
   color: $color-dark;
@@ -9,5 +11,22 @@
 
   &__text {
     margin-bottom: 4rem;
+  }
+
+  @include respond-to('extra-large') {
+    @include padding-extra-large;
+  }
+
+  @include respond-to('large') {
+
+    @include padding-large;
+
+    &__grid {
+      flex-direction: column;
+
+      & > div {
+        width: 100%;
+      }
+    }
   }
 }
