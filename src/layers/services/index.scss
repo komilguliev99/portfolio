@@ -4,10 +4,10 @@
 
 .Services {
   color: $color-dark;
-  margin-bottom: 5rem;
   padding-left: $main-padding-left;
   padding-right: $main-padding-right;
   padding-bottom: 5rem;
+  background: #fff;
 
   &__text {
     margin-bottom: 4rem;
@@ -27,6 +27,14 @@
       & > div {
         width: 100%;
       }
+    }
+  }
+
+  @include respond-to('small') {
+    @include padding-small;
+
+    &__info {
+      gap: 2rem;
     }
   }
 }

@@ -33,12 +33,21 @@
     @include padding-extra-large;
   }
 
-  @include respond-to('large') {
+  @include respond-to('medium') {
 
     @include padding-large;
 
     &__content {
       grid-template-columns: 2fr;
     }
+
+    & .FlexBox {
+      gap: 0
+    }
+  }
+
+  @include respond-to('small') {
+    @include padding-small;
+
   }
 }

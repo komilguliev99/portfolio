@@ -5,7 +5,8 @@
 .Resume {
   padding-left: $main-padding-left;
   padding-right: $main-padding-right;
-  padding-bottom: 10rem;
+  padding-bottom: 5rem;
+  background: #fff;
 
   &__chapter {
     font-size: 2.5rem;
@@ -40,6 +41,14 @@
       & > div {
         width: 100%;
       }
+    }
+  }
+
+  @include respond-to('small') {
+    @include padding-small;
+
+    &__info {
+      gap: 2rem;
     }
   }
 }

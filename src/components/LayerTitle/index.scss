@@ -1,4 +1,5 @@
 @import '../../scss/abstract';
+@import '../../scss/displays';
 
 .LayerTitle {
   font-size: 36px;
@@ -33,5 +34,9 @@
       border-radius: 5px;
       background: $color-main-blue;
     }
+  }
+
+  @include respond-to('extra-small') {
+    font-size: 28px;
   }
 }

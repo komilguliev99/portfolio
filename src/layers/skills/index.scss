@@ -27,7 +27,7 @@
     @include padding-extra-large;
   }
 
-  @include respond-to('large') {
+  @include respond-to('medium') {
 
     @include padding-large;
 
@@ -37,6 +37,14 @@
       & > div {
         width: 100%;
       }
+    }
+  }
+
+  @include respond-to('small') {
+    @include padding-small;
+
+    &__info {
+      gap: 2rem;
     }
   }
 }

@@ -1,8 +1,11 @@
 @import './scss/abstract';
 @import './scss/displays';
+@import './scss/gradients';
 
 .App {
   padding: 0;
+  overflow: hidden;
+  // @include moonlightLeft;
 
   &__content {
     display: block;

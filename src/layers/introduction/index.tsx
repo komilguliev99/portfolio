@@ -11,7 +11,7 @@ export const Introduction: FC<{}> = () => {
     return (
         <div className="Introduction">
             <div className="Introduction__content">
-                <h2 className="Introduction__title">Komil Guliev</h2>
+                <h2 className="Introduction__title">Komil <span>Guliev</span></h2>
                 <TypingTexts texts={animationTexts} />
             </div>
         </div>

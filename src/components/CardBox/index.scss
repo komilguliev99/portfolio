@@ -1,4 +1,5 @@
 @import '../../scss/abstract';
+@import '../../scss/displays';
 
 .CardBox {
   padding: 3rem;
@@ -8,5 +9,9 @@
 
   &_full {
     height: 100%;
+  }
+
+  @include respond-to('extra-small') {
+    padding: 1.5rem;
   }
 }

@@ -20,31 +20,7 @@
     z-index: 4;
 
     @include moonlight;
-  }
-
-  &__content {
-    position: relative;
-    padding: 250px 0 0 300px;
-    box-sizing: border-box;
-    height: 100%;
-    z-index: 99;
-  }
-
-  &__overlay &__title {
-    color: $color-typing-primary;
-  }
-
-  &__overlay {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    clip-path: polygon(90% 0, 100% 0, 100% 100%, 10% 100%);
-    padding: 250px 0 0 300px;
-    box-sizing: border-box;
-    @include moonlight;
+    animation: backgroundAnim 9s ease infinite, rotate 6s 3s ease infinite;
   }
 
   &__content,
@@ -54,17 +30,20 @@
     justify-content: center;
     align-items: center;
     padding: 0;
-
-    & > .TypingText {
-      text-align: left;
-    }
+    box-sizing: border-box;
+    height: 100%;
+    position: relative;
+    z-index: 99;
   }
 
   &__title {
-    font-size: 64px;
-    font-weight: 600;
-    letter-spacing: 1px;
-    line-height: 67px;
+    &,
+    & > span {
+      font-size: 64px;
+      font-weight: 600;
+      letter-spacing: 1px;
+      line-height: 67px;
+    }
   }
 
   & > h4 {
@@ -84,6 +63,31 @@
       justify-content: center;
       align-items: center;
 
+    }
+  }
+
+  @include respond-to('small') {
+    @include padding-small;
+
+    &__title {
+      & > span {
+        padding-left: 5rem;
+      }
+    }
+
+    &__content {
+      align-items: flex-start;
+    }
+  }
+
+  @include respond-to('extra-small') {
+
+    &__title {
+      &,
+      & > span {
+        font-size: 50px;
+        line-height: 55px;
+      }
     }
   }
 }
@@ -113,5 +117,37 @@
   }
   100% {
     opacity: 0;
+  }
+}
+
+@keyframes backgroundAnim {
+  0% {
+    background-size: 100% 100%;
+    background-position: 0 0;
+
+  }
+  33% {
+    background-size: 10% 30%;
+    background-position: 40% 20%;
+  }
+  66% {
+    background-size: 10% 30%;
+    background-position: 40% 20%;
+  }
+  100% {
+    background-size: 100% 100%;
+    background-position: 0 0;
+  }
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0);
+  }
+  50% {
+    transform: rotate(360deg) scale(.4);
+  }
+  100% {
+    transform: rotate(360deg) scale(1);
   }
 }

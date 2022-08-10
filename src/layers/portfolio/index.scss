@@ -33,4 +33,12 @@
       }
     }
   }
+
+  @include respond-to('small') {
+    @include padding-small;
+
+    &__info {
+      gap: 2rem;
+    }
+  }
 }

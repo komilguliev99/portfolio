@@ -4,10 +4,12 @@
 
 .About {
   color: $color-dark;
-  margin-bottom: 5rem;
+  padding-bottom: 5rem;
   padding-left: $main-padding-left;
   padding-right: $main-padding-right;
-
+  background: #fff;
+  position: relative;
+  z-index: 999;
   &__text {
     margin-bottom: 3rem;
   }
@@ -71,6 +73,34 @@
       & > div {
 
       }
+    }
+  }
+
+  @include respond-to('small') {
+    @include padding-small;
+
+    &__info {
+      gap: 2rem;
+    }
+  }
+
+  @include respond-to('extra-small') {
+
+    &__img {
+      min-width: 28rem;
+      height: 30rem;
+    }
+
+    &__info {
+      gap: 2rem;
+    }
+
+    &__container {
+      padding-top: 3rem;
+    }
+
+    &__title {
+
     }
   }
 }

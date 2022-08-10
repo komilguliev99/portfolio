@@ -1,4 +1,5 @@
 @import '../../scss/abstract';
+@import '../../scss/displays';
 
 .FactLabel {
   padding-left: 6.8rem;
@@ -33,5 +34,27 @@
 
   & > li {
     margin-bottom: 5px;
+  }
+
+  @include respond-to('extra-small') {
+    padding-left: 5rem;
+
+    &__title {
+      font-size: 1.7rem;
+    }
+
+    &__subtitle {
+      font-size: 1.3rem;
+    }
+
+    &__icon {
+      width: 3.5rem;
+      height: 3.5rem;
+
+      & > img {
+        width: 1.5rem;
+        min-height: 1.5rem;
+      }
+    }
   }
 }

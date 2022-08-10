@@ -1,6 +1,7 @@
 @import '../../scss/abstract';
 @import '../../scss/gradients';
 @import '../../scss/animations';
+@import '../../scss/displays';
 
 .Loader {
   position: fixed;
@@ -48,5 +49,11 @@
     position: absolute;
     top: calc(100% + 40px);
     left: 0;
+  }
+
+  @include respond-to('small') {
+    &__title {
+      font-size: 3rem;
+    }
   }
 }
