@@ -6,8 +6,10 @@
 .Introduction {
   box-sizing: border-box;
   height: 95vh;
+  width: calc(100% + 250px);
   color: #fff;
   position: relative;
+  margin-left: -250px;
 
   &::before {
     content: "";
@@ -16,11 +18,11 @@
     position: absolute;
     top: 0;
     left: 0;
-    filter: brightness(75%) sepia(10%);
     z-index: 4;
+    background-size: 300% 300%;
 
     @include moonlight;
-    animation: backgroundAnim 9s ease infinite, rotate 6s 3s ease infinite;
+    animation: backgroundAnim 9s ease infinite;
   }
 
   &__content,
@@ -55,6 +57,8 @@
   @include respond-to('large') {
 
     @include padding-large;
+    margin-left: 0;
+    width: 100%;
 
     &__content,
     &__overlay {
@@ -122,21 +126,17 @@
 
 @keyframes backgroundAnim {
   0% {
+    background-position: 20% 20%;
+  }
+  25% {
+    background-position: 60% 30%;
+  }
+  50% {
+    background-postions: 80% 30%;
     background-size: 100% 100%;
-    background-position: 0 0;
-
-  }
-  33% {
-    background-size: 10% 30%;
-    background-position: 40% 20%;
-  }
-  66% {
-    background-size: 10% 30%;
-    background-position: 40% 20%;
   }
   100% {
-    background-size: 100% 100%;
-    background-position: 0 0;
+    background-position: 20% 20%;
   }
 }
 
@@ -145,7 +145,7 @@
     transform: rotate(0);
   }
   50% {
-    transform: rotate(360deg) scale(2);
+    transform: rotate(360deg) scale(1);
   }
   100% {
     transform: rotate(360deg) scale(1);
