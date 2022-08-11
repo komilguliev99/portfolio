@@ -49,6 +49,15 @@
   }
 }
 
+.Overlay {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 999;
+}
+
 .Toggler {
   position: fixed;
   top: 5rem;

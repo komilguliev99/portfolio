@@ -17,6 +17,11 @@ export const Header: FCC<{}> = () => {
     const [active, setActive] = useState(false);
 
     const toggle = () => {
+        if (!active) {
+            document.body.style.position = 'fixed';
+        } else {
+            document.body.style.position = 'static';
+        }
         setActive(!active);
     };
 

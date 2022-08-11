@@ -16,7 +16,7 @@
       height: 20px;
       margin-right: 1.5rem;
       transition: all .3s ease;
-      filter: sepia(80%);
+      filter: invert(99%) sepia(1%) saturate(2%) hue-rotate(343deg) brightness(101%) contrast(100%);
     }
 
     & > p {
