@@ -10,6 +10,7 @@ export const Introduction: FC<{}> = () => {
 
     return (
         <div className="Introduction">
+            <div className="Introduction__flash-container"><i className="flash"></i><i className="flash"></i><i className="flash"></i><i className="flash"></i><i className="flash"></i><i className="flash"></i><i className="flash"></i><i className="flash"></i><i className="flash"></i><i className="flash"></i><i className="flash"></i><i className="flash"></i><i className="flash"></i><i className="flash"></i><i className="flash"></i></div>
             <div className="Introduction__content">
                 <h2 className="Introduction__title">Komil <span>Guliev</span></h2>
                 <TypingTexts texts={animationTexts} />
