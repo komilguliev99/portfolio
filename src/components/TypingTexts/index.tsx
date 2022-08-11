@@ -33,9 +33,9 @@ export const TypingTexts: FC<ITypingTexts> = ({
     };
 
     useEffect(() => {
-        let speed = 200;
+        let speed = 80;
         if (cursor > 7) {
-            speed = 300;
+            speed = 200;
         }
 
         setTimeout(() => {

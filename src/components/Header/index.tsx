@@ -18,9 +18,9 @@ export const Header: FCC<{}> = () => {
 
     const toggle = () => {
         if (!active) {
-            document.body.style.position = 'fixed';
+            document.body.style.overflow = 'hidden';
         } else {
-            document.body.style.position = 'static';
+            document.body.style.overflow = 'auto';
         }
         setActive(!active);
     };
