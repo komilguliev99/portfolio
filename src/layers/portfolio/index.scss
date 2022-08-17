@@ -5,9 +5,8 @@
 .Portfolio {
   color: $color-dark;
   background: $bg-color-blue-light;
-  padding-left: $main-padding-left;
-  padding-right: $main-padding-right;
-  padding-bottom: 6rem;
+
+  @include main-padding;
 
   &__text {
     margin-bottom: 3rem;

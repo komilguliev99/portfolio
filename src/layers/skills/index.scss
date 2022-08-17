@@ -4,9 +4,8 @@
 
 .Skills {
   background: $bg-color-blue-light;
-  padding-left: $main-padding-left;
-  padding-right: $main-padding-right;
-  padding-bottom: 4rem;
+
+  @include main-padding;
 
   &__box {
     display: flex;

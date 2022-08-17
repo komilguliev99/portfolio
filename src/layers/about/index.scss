@@ -5,11 +5,12 @@
 .About {
   color: $color-dark;
   padding-bottom: 5rem;
-  padding-left: $main-padding-left;
-  padding-right: $main-padding-right;
   background: #fff;
   position: relative;
   z-index: 999;
+
+  @include main-padding;
+
   &__text {
     margin-bottom: 3rem;
   }

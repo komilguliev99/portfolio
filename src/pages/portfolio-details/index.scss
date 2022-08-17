@@ -1,6 +1,103 @@
 @import '../../scss/abstract';
+@import '../../scss/mixins';
+@import '../../scss/displays';
 
-.PortfolioDetails {
-  padding-left: $main-padding-left;
-  padding-right: $main-padding-right;
+.Details {
+
+  & > .row {
+    padding-left: $main-padding-left;
+    padding-right: $main-padding-right;
+    padding-top: 5rem;
+    padding-bottom: 2rem;
+    box-sizing: border-box;
+  }
+
+    &__header {
+    padding: 4rem 3rem;
+    display: flex;
+    justify-content: space-between;
+    background: $bg-grey-light;
+
+    & > h4 {
+      font-weight: 300;
+      font-size: 2.5rem;
+      color: $color-dark;
+    }
+  }
+
+  &__title {
+    font-size: 2.2rem;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    padding-bottom: 2rem;
+    margin-bottom: 1rem;
+    border-bottom: 1px solid #eee;
+  }
+
+  &__info {
+    width: 100%;
+    max-width: 725px;
+    padding-left: 4rem;
+    color: $color-dark;
+    font-family: 'Open sans', sans-serif;
+    margin: 0 auto 5rem auto;
+
+    & > h4 {
+      font-size: 3rem;
+      margin-bottom: 2rem;
+      margin-top: 5rem;
+      font-weight: 500;
+    }
+  }
+
+  @include respond-to('large') {
+
+    & .row {
+      @include padding-large;
+    }
+
+  }
+
+  @include respond-to('pre-large') {
+
+    &__info {
+      padding: 0;
+    }
+  }
+
+  @include respond-to('small') {
+
+    & .row {
+      @include padding-small;
+    }
+
+    &__header {
+      flex-direction: column;
+    }
+  }
+
+  @include respond-to('extra-small') {
+
+    & .row {
+      padding-left: 1rem;
+      padding-right: 1rem;
+    }
+
+    &__info {
+      padding: 0 2rem;
+      box-sizing: border-box;
+    }
+  }
+}
+
+.RowFact {
+  padding: .5rem 0;
+  font-size: 1.5rem;
+  color: $color-dark;
+  font-family: 'Open sans', sans-serif;
+
+  & > span:first-child {
+    font-weight: bolder;
+    margin-right: 1rem;
+  }
 }

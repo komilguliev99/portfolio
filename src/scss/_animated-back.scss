@@ -54,8 +54,8 @@ $count: 30;
       @for $step from 1 through $steps {
         #{$step * (100 / $steps) * 1%} {
           transform:
-            translateY(random(100vw) - 50vw)
-            translateX(random(100vh) - 50vh)
+            translateY(random(140vw) - 50vw)
+            translateX(random(140vh) - 50vh)
             scale(random(1) + .25);
         }
       }

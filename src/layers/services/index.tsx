@@ -10,7 +10,7 @@ export const Services: FC<{}> = () => {
             <LayerTitle title="Services" underlined />
             <p className="Services__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam ratione molestias est unde voluptatibus nemo doloribus eaque! Iure, doloremque dicta culpa ad, vel ipsum explicabo voluptatum maiores eius amet adipisci quibusdam quae accusantium sed provident laboriosam odit ut tempore aut. Accusamus in adipisci aperiam ea aliquid quas possimus quidem saepe.</p>
 
-            <FlexBox cols={3} gap={2}>
+            <FlexBox cols={3} gap={3}>
                 <ServiceCard title="Site Layouts" icon="code" description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa sequi pariatur consequatur cumque tenetur voluptate totam quo suscipit tempore odit." />
                 <ServiceCard title="Adaptive design" icon="adaptive" description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa sequi pariatur consequatur cumque tenetur voluptate totam quo suscipit tempore odit." />
                 <ServiceCard title="Server side" icon="backend" description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa sequi pariatur consequatur cumque tenetur voluptate totam quo suscipit tempore odit." />

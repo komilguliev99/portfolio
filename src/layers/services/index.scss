@@ -4,10 +4,9 @@
 
 .Services {
   color: $color-dark;
-  padding-left: $main-padding-left;
-  padding-right: $main-padding-right;
-  padding-bottom: 5rem;
   background: #fff;
+
+  @include main-padding;
 
   &__text {
     margin-bottom: 4rem;

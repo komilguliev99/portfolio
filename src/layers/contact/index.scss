@@ -5,10 +5,8 @@
 .Contact {
   color: $color-dark;
   background: $bg-color-blue-light;
-  padding-left: $main-padding-left;
-  padding-right: $main-padding-right;
-  padding-bottom: 12rem;
 
+  @include main-padding;
 
   &__text {
     padding-bottom: 3rem;

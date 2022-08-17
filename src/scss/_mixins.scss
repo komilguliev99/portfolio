@@ -1,6 +1,15 @@
+@import '../scss/abstract';
+
+@mixin main-padding {
+  padding-top: $main-padding-top;
+  padding-bottom: $main-padding-bottom;
+  padding-left: $main-padding-left;
+  padding-right: $main-padding-right;
+}
+
 @mixin padding-extra-large {
-  padding-left: 3rem;
-  padding-right: 3rem;
+  padding-left: 15rem;
+  padding-right: 15rem;
 }
 
 @mixin padding-large {
@@ -11,4 +20,8 @@
 @mixin padding-small {
   padding-left: 5%;
   padding-right: 5%;
+}
+
+@mixin shadow-sm {
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 6px;
 }

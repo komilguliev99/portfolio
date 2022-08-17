@@ -3,10 +3,9 @@
 @import '../../scss/mixins';
 
 .Resume {
-  padding-left: $main-padding-left;
-  padding-right: $main-padding-right;
-  padding-bottom: 5rem;
   background: #fff;
+
+  @include main-padding;
 
   &__chapter {
     font-size: 2.5rem;
