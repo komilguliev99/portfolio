@@ -1,5 +1,5 @@
 import React from 'react';
-// import { Loader } from './components/Loader';
+import { Loader } from './components/Loader';
 import { Header } from './components/Header';
 import { Routes, Route } from 'react-router-dom';
 import { MainPage } from 'pages/main';
@@ -16,7 +16,7 @@ function App() {
                     <Route path='/projects' element={<PortfolioDetailsPage />} />
                 </Routes>
             </div>
-            {/* <Loader time={3} /> */}
+            <Loader time={3} />
         </div>
     );
 }
